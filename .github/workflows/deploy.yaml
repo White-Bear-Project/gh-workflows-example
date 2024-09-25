@@ -19,7 +19,7 @@ jobs:
     if: ${{ inputs.workspace == 'Develop' }}
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Develop deployment
       run: echo "Deploying in Develop infrastructure"
   deploy-stage:
@@ -29,7 +29,7 @@ jobs:
     if: ${{ inputs.workspace == 'Stage' }}
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: QA deployment
       run: echo "Deploying in QA infrastructure"
   deploy-production:
@@ -39,6 +39,6 @@ jobs:
     if: ${{ inputs.workspace == 'Production' }}
     steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Develop deployment
       run: echo "Deploying in Production infrastructure"
