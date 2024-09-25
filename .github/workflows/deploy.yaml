@@ -21,8 +21,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Develop deployment
-      run: echo "Deploying in Develop infrastructure"
-           echo "The secret is ${{ secrets.DEVELOP_SECRET }}"
+      run: echo "Deploying in Develop infrastructure\n";
+           echo "The secret is ${{ secrets.DEVELOP_SECRET }}";
   deploy-stage:
     name: Deploy version to QA
     runs-on: ubuntu-latest
@@ -32,7 +32,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: QA deployment
-      run: echo "Deploying in QA infrastructure"
+      run: echo "Deploying in QA infrastructure\n";
+           echo "The secret is ${{ secrets.STAGE_SECRET }}";
   deploy-production:
     name: Deploy version to Production
     runs-on: ubuntu-latest
@@ -42,4 +43,5 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Develop deployment
-      run: echo "Deploying in Production infrastructure"
+      run: echo "Deploying in Production infrastructure\n"
+           echo "The secret is ${{ secrets.PRODCUTION_SECRET }}";
