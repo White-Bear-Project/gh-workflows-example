@@ -22,7 +22,8 @@ jobs:
       uses: actions/checkout@v4
     - name: Develop deployment
       run: echo "Deploying in Develop infrastructure\n";
-           echo "The secret is ${{ secrets.DEVELOP_SECRET }}";
+           echo "The secret is ${{ secrets.DEVELOP_SECRET }}\n";
+           echo "The variable is ${{ vars.DEVELOP_VAR }}\n";
   deploy-stage:
     name: Deploy version to QA
     runs-on: ubuntu-latest
@@ -33,7 +34,8 @@ jobs:
       uses: actions/checkout@v4
     - name: QA deployment
       run: echo "Deploying in QA infrastructure\n";
-           echo "The secret is ${{ secrets.STAGE_SECRET }}";
+           echo "The secret is ${{ secrets.STAGE_SECRET }}\n";
+           echo "The variable is ${{ vars.STAGE_VAR }}\n";
   deploy-production:
     name: Deploy version to Production
     runs-on: ubuntu-latest
@@ -44,4 +46,5 @@ jobs:
       uses: actions/checkout@v4
     - name: Production deployment
       run: echo "Deploying in Production infrastructure\n"
-           echo "The secret is ${{ secrets.PRODCUTION_SECRET }}";
+           echo "The secret is ${{ secrets.PRODCUTION_SECRET }}\n";
+           echo "The variable is ${{ vars.PRODUCTION_VAR }}\n";
