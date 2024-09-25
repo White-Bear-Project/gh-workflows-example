@@ -21,7 +21,6 @@ jobs:
     - name: Develop deployment
       run: echo "Deploying in Develop infrastructure"
   deploy-stage:
-  deploy-develop:
     name: Deploy version to QA
     runs-on: ubuntu-latest
     environment: Stage
@@ -30,7 +29,6 @@ jobs:
     - name: QA deployment
       run: echo "Deploying in QA infrastructure"
   deploy-production:
-  deploy-develop:
     name: Deploy version to Production
     runs-on: ubuntu-latest
     environment: Production
