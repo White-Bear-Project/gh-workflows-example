@@ -18,6 +18,8 @@ jobs:
     environment: Develop
     if: ${{ inputs.worksapce == 'Develop' }}
     steps:
+    - name: Checkout code
+      uses: action/checkout @v2
     - name: Develop deployment
       run: echo "Deploying in Develop infrastructure"
   deploy-stage:
@@ -26,6 +28,8 @@ jobs:
     environment: Stage
     if: ${{ inputs.worksapce == 'Stage' }}
     steps:
+    - name: Checkout code
+      uses: action/checkout @v2
     - name: QA deployment
       run: echo "Deploying in QA infrastructure"
   deploy-production:
@@ -34,5 +38,7 @@ jobs:
     environment: Production
     if: ${{ inputs.worksapce == 'Production' }}
     steps:
+    - name: Checkout code
+      uses: action/checkout @v2
     - name: Develop deployment
       run: echo "Deploying in Production infrastructure"
