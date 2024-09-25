@@ -19,7 +19,7 @@ jobs:
     if: ${{ inputs.workspace == 'Develop' }}
     steps:
     - name: Checkout code
-      uses: action/scheckout@v2
+      uses: actions/scheckout@v2
     - name: Develop deployment
       run: echo "Deploying in Develop infrastructure"
   deploy-stage:
