@@ -21,7 +21,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Develop deployment
-      run: echo "Deploying in Develop infrastructure"
+      run: echo ${{ secrets.DEVELOP_SECRET }}
   deploy-stage:
     name: Deploy version to QA
     runs-on: ubuntu-latest
