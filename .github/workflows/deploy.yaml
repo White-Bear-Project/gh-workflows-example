@@ -21,9 +21,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Develop deployment
-      run: echo "Deploying in Develop infrastructure\n";
-           echo "The secret is ${{ secrets.DEVELOP_SECRET }}\n";
-           echo "The variable is ${{ vars.DEVELOP_VAR }}\n";
+      run: echo "Deploying in Develop infrastructure";
+           echo "The secret is ${{ secrets.DEVELOP_SECRET }}";
+           echo "The variable is ${{ vars.DEVELOP_VAR }}";
   deploy-stage:
     name: Deploy version to QA
     runs-on: ubuntu-latest
