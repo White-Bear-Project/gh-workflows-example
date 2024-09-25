@@ -33,9 +33,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: QA deployment
-      run: echo "Deploying in QA infrastructure\n";
-           echo "The secret is ${{ secrets.STAGE_SECRET }}\n";
-           echo "The variable is ${{ vars.STAGE_VAR }}\n";
+      run: echo "Deploying in QA infrastructure";
+           echo "The secret is ${{ secrets.STAGE_SECRET }}";
+           echo "The variable is ${{ vars.STAGE_VAR }}";
   deploy-production:
     name: Deploy version to Production
     runs-on: ubuntu-latest
@@ -45,6 +45,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     - name: Production deployment
-      run: echo "Deploying in Production infrastructure\n"
-           echo "The secret is ${{ secrets.PRODCUTION_SECRET }}\n";
-           echo "The variable is ${{ vars.PRODUCTION_VAR }}\n";
+      run: echo "Deploying in Production infrastructure"
+           echo "The secret is ${{ secrets.PRODCUTION_SECRET }}";
+           echo "The variable is ${{ vars.PRODUCTION_VAR }}";
