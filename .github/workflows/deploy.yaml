@@ -1,25 +1,16 @@
 name: Deploy new version
 on:
   workflow_dispatch:
-    inputs:
-      workspace:
-        description: "Stage to deploy to"
-        required: true
-        type: choice
-        default: Dev
-        options: [ Develop, Stage, Production ]
   push:
     branches: [ main ]
 permissions:
   id-token: write
   contents: read
 jobs:
-  
   deploy-develop:
     name: Deploy version to Develop
     runs-on: ubuntu-latest
     environment: Develop
-    if: ${{ github.event_name == 'push' && github.ref_name == 'main' || github.event.inputs.workspace == 'Develop' }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -31,7 +22,6 @@ jobs:
     name: Deploy version to QA
     runs-on: ubuntu-latest
     environment: Stage
-    if: ${{ inputs.workspace == 'Stage' }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -43,7 +33,6 @@ jobs:
     name: Deploy version to Production
     runs-on: ubuntu-latest
     environment: Production
-    if: ${{ inputs.workspace == 'Production' }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
