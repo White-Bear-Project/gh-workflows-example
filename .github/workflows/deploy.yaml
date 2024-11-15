@@ -19,7 +19,7 @@ jobs:
     name: Deploy version to Develop
     runs-on: ubuntu-latest
     environment: Develop
-    if: ${{ github.event_name == 'push' && github.ref_name == 'master' || github.event.inputs.workspace == 'Develop' }}
+    if: ${{ github.event_name == 'push' && github.ref_name == 'main' || github.event.inputs.workspace == 'Develop' }}
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
