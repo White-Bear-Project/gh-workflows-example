@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/White-Bear-Project/gh-workflows-example/compare/v1.0.1...v1.0.2) (2024-11-19)
+
+
+### Continuous Integration
+
+* **workflow:** Update release-please.yaml ([139ffed](https://github.com/White-Bear-Project/gh-workflows-example/commit/139ffed51557cc98147690c3e36f26aaae572736))
+
 ## [1.0.1](https://github.com/White-Bear-Project/gh-workflows-example/compare/v1.0.0...v1.0.1) (2024-11-19)
 
 
