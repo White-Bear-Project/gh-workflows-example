@@ -6,7 +6,7 @@ on:
     branches: [develop]
 
 jobs:
-  conventional-commits:
+  conventional_commits:
     name: "Conventional commits"
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +18,7 @@ jobs:
     name: "Code format (Prettier)"
     runs-on: ubuntu-latest
     needs:
-      - conventional-commits
+      - conventional_commits
     steps:
       - name: 'Check code format with Prettier'
         run: |
@@ -28,7 +28,7 @@ jobs:
     name: "Unitary tests"
     runs-on: ubuntu-latest
     needs:
-      - code-formatter
+      - code_formatter
     steps:
       - name: 'Unitary tests before PR'
         run: |
