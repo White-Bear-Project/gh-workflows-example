@@ -10,6 +10,8 @@ jobs:
     name: "Conventional commits"
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
       - name: 'Check PR Title'
         run: |
           echo 'Check PR title'
@@ -20,6 +22,8 @@ jobs:
     needs:
       - conventional_commits
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
       - name: 'Check code format with Prettier'
         run: |
           echo 'Checking code format with Prettier'  
@@ -30,6 +34,8 @@ jobs:
     needs:
       - code_formatter
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
       - name: 'Unitary tests before PR'
         run: |
           echo 'Running unitary tests'
