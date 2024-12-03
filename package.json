@@ -1,6 +1,6 @@
 {
     "name": "@dehn/dehn-risk-planner",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "scripts": {
         "dev": "vite --port=4200 --force",
         "build": "vue-tsc --noEmit && vite build",
