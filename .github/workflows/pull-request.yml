@@ -1,6 +1,7 @@
 name: DEHN Risk frontend PR
 
 on:
+  workflow_dispatch:
   pull_request:
     branches: [develop]
 
