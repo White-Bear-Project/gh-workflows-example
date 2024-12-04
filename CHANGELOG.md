@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.2](https://github.com/White-Bear-Project/gh-workflows-example/compare/v1.0.1...v1.0.2) (2024-12-04)
+
+
+### Miscellaneous
+
+* **main:** release 1.0.1 ([#6](https://github.com/White-Bear-Project/gh-workflows-example/issues/6)) ([59295ea](https://github.com/White-Bear-Project/gh-workflows-example/commit/59295eae83e16318d625faaa6072055fc23bc09d))
+* **main:** release 1.0.2 ([0f4ca40](https://github.com/White-Bear-Project/gh-workflows-example/commit/0f4ca4026ee5d2770bcb189bf5be5895cc1c50ae))
+
+
+### Continuous Integration
+
+* **workflow:** Update release-please.yaml ([139ffed](https://github.com/White-Bear-Project/gh-workflows-example/commit/139ffed51557cc98147690c3e36f26aaae572736))
+
 ## [1.0.1](https://github.com/White-Bear-Project/gh-workflows-example/compare/v1.0.0...v1.0.1) (2024-11-29)
 
 
