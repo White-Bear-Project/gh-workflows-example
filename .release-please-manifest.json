@@ -1,3 +1,10 @@
 {
-    ".": "1.0.1"
+    ".": "1.0.1",
+      "extra-files": [
+    {
+      "type": "xml",
+      "path": "./pom.xml",
+      "xpath": "//project/version"
+    }
+  ]
 }
