@@ -1,13 +1,7 @@
 {
   "packages": {
     ".": {
-      "release-type": "node",
-      "extra-files": 
-      {
-        "type": "xml",
-        "path": "pom.xml",
-        "xpath": "/project/version"
-      }
+      "release-type": "node"
     }
   }
 }
