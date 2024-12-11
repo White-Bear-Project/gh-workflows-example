@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.0.2](https://github.com/White-Bear-Project/gh-workflows-example/compare/v1.0.1...v1.0.2) (2024-12-11)
+
+
+### Bug Fixes
+
+* **workflows:** fixes GITHUB_TOKEN token issue ([9f5bcac](https://github.com/White-Bear-Project/gh-workflows-example/commit/9f5bcacecc15878c57e445af9fb79fe44d0b31c6))
+
+
+### Miscellaneous
+
+* **version:** Create package-lock.json ([c88ddd7](https://github.com/White-Bear-Project/gh-workflows-example/commit/c88ddd754fc481047b7f71c6b77060bf96e04cdb))
+* **version:** Create pom.xml ([a03f952](https://github.com/White-Bear-Project/gh-workflows-example/commit/a03f9528671eeb96923d1433e178185520a9ecd0))
+* **version:** Update .release-please-manifest.json ([c232356](https://github.com/White-Bear-Project/gh-workflows-example/commit/c232356d0f9034c88145255dcc013b0ae6919d5d))
+
+
+### Infrastructure
+
+* adds puhsed workflow ([781174a](https://github.com/White-Bear-Project/gh-workflows-example/commit/781174aaa2d91bc8fb2b58fa776c9f35e4ea542c))
+
+
+### Continuous Integration
+
+* **workflows:** adds release-please integration ([f4f7227](https://github.com/White-Bear-Project/gh-workflows-example/commit/f4f72272c9380ec82a8fa4d890be7b56b43fa840))
+
 ## [1.0.1](https://github.com/White-Bear-Project/gh-workflows-example/compare/v1.0.0...v1.0.1) (2024-11-29)
 
 
