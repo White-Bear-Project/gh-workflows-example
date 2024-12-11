@@ -1,3 +1,13 @@
 {
-    ".": "1.0.1"
+  "packages": {
+    "node-project": {
+      "release-type": "node",
+      "path": "."
+    },
+    "maven-project": {
+      "release-type": "maven",
+      "path": "."
+    }
+  },
+  "plugins": ["node-workspace"]
 }
