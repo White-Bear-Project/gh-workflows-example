@@ -1,6 +1,6 @@
 {
   "packages": {
-    ".": {
+    "@dehn/dehn-risk-planner": {
       "release-type": "node",
       "version": "1.0.1"
     }
